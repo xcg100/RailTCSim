@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : gamestore.dtd
+    Created on : 12. Mai 2007, 20:46
+    Author     : js
+    Description:
+        Savegame.
+    DocumentID : $Revision: 12 $
+
+-->
+
+<!ELEMENT savegame (time,tracks?,routes?,signaldata?,trainemitter?,trains?,pathqueue?)>
+<!ATTLIST savegame
+    name    CDATA   #REQUIRED
+    version CDATA   #REQUIRED
+>
+
+<!ELEMENT tracks (track*,connect*)>
+<!ATTLIST tracks
+    x		CDATA   #IMPLIED
+    y		CDATA   #IMPLIED
+    scale	CDATA   #IMPLIED
+>
+
+<!ELEMENT track (data*,trackobject*)>
+<!ATTLIST track
+    x            CDATA   #REQUIRED
+    y            CDATA   #REQUIRED
+    rotation     CDATA   #REQUIRED
+    angel        CDATA   #REQUIRED
+    length       CDATA   #REQUIRED
+    level	 CDATA   #REQUIRED
+    progress     CDATA   #IMPLIED
+    group        CDATA   #IMPLIED
+>
+
+<!ELEMENT data EMPTY>
+<!ATTLIST data
+    key          CDATA   #REQUIRED
+    value        CDATA   #REQUIRED
+>
+
+<!ELEMENT trackobject (data*)>
+<!ATTLIST trackobject
+    index        CDATA   #REQUIRED
+    forward      (y|n)   #REQUIRED
+    type         CDATA   #REQUIRED
+    name         CDATA   #REQUIRED
+    region       CDATA   #REQUIRED
+    hash         CDATA   #REQUIRED
+>
+
+<!ELEMENT connect EMPTY>
+<!ATTLIST connect
+    id           CDATA   #REQUIRED
+    type         (prev|next1|next2)   #REQUIRED
+    destid       CDATA   #REQUIRED
+    set          (y|n)   #IMPLIED
+>
+
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<!ELEMENT signaldata (path*)>
+<!ATTLIST signaldata
+    hash         CDATA   #REQUIRED
+>
+<!-- a pathable object -->
+
+<!ELEMENT path (pathelement*,pathroute*)>
+<!ATTLIST path
+    name         CDATA   #REQUIRED
+    state        CDATA   #REQUIRED
+    mode         CDATA   #IMPLIED
+    enabled      (y|n)   #IMPLIED
+    failure      (y|n)   #IMPLIED
+>
+<!--
+mode: automatic
+-->
+ 
+<!ELEMENT pathelement EMPTY>
+<!ATTLIST pathelement
+    id           CDATA   #REQUIRED
+    set          (y|n)   #IMPLIED
+    cstate       CDATA   #IMPLIED
+>
+<!--
+cstate: current state: set, -
+-->
+
+<!ELEMENT pathroute (mutex*)>
+<!ATTLIST pathroute
+    name         CDATA   #REQUIRED
+    priority     CDATA   #REQUIRED
+>
+
+<!ELEMENT mutex EMPTY>
+<!ATTLIST mutex
+    name         CDATA   #REQUIRED
+>
+
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<!ELEMENT trainemitter (emit*,startqueue?)>
+<!ATTLIST trainemitter
+    hash         CDATA   #REQUIRED
+>
+
+<!ELEMENT emit (frequence*,epart*)>
+<!ATTLIST emit
+    name         CDATA   #REQUIRED
+    vmax         CDATA   #REQUIRED
+    route        CDATA   #REQUIRED
+    loaded       (y|n)   #REQUIRED
+>
+<!ELEMENT frequence EMPTY>
+<!ATTLIST frequence
+    t            CDATA   #REQUIRED
+>
+<!ELEMENT epart EMPTY>
+<!ATTLIST epart
+    id           CDATA   #REQUIRED
+    forward      (y|n)	 #REQUIRED
+>
+<!ELEMENT startqueue (emit*)>
+
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<!ELEMENT time EMPTY>
+<!ATTLIST time
+    time         CDATA   #REQUIRED
+    lastemitter  CDATA   #REQUIRED
+    x            CDATA   #REQUIRED
+    y            CDATA   #REQUIRED
+>
+
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<!ELEMENT routes (route*)>
+<!ATTLIST routes
+>
+
+<!ELEMENT route (command*)>
+<!ATTLIST route
+    name         CDATA   #REQUIRED
+>
+
+<!ELEMENT command (data*)>
+<!ATTLIST command
+    type         CDATA   #REQUIRED
+    name         CDATA   #REQUIRED
+>
+
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<!ELEMENT pathqueue (pathrequest*)>
+<!ATTLIST pathqueue
+>
+
+<!ELEMENT pathrequest (requestedpath*)>
+<!ATTLIST pathrequest
+    route       CDATA   #IMPLIED
+    train       CDATA   #REQUIRED
+    priocounter CDATA   #REQUIRED
+>
+
+<!ELEMENT requestedpath EMPTY>
+<!ATTLIST requestedpath
+    hash        CDATA   #REQUIRED
+    name        CDATA   #REQUIRED
+>
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<!ELEMENT trains (train*)>
+<!ATTLIST trains
+>
+
+<!ELEMENT train (point*,tpart*,tdata*)>
+<!ATTLIST train
+    name            CDATA   #REQUIRED
+    parent          CDATA   #REQUIRED
+    trainmaxspeed   CDATA   #REQUIRED
+    trackmaxspeed   CDATA   #REQUIRED
+    tempmaxspeed    CDATA   #REQUIRED
+    currentspeed    CDATA   #REQUIRED
+    acceleration    CDATA   #REQUIRED
+    deceleration    CDATA   #REQUIRED
+    forward         (y|n)   #REQUIRED
+    weight          CDATA   #REQUIRED
+    time            CDATA   #REQUIRED
+    manualmode      (y|n)   "no"
+>
+
+<!ELEMENT tpart (point*)>
+<!ATTLIST tpart
+    id                  CDATA   #REQUIRED
+    forward             (y|n)   #REQUIRED
+    distance            CDATA   #REQUIRED
+    distanceFront       CDATA   #REQUIRED
+    distanceBack        CDATA   #REQUIRED
+    moved               CDATA   #REQUIRED
+    trainRelativForward (y|n)   #REQUIRED
+>
+
+<!ELEMENT point EMPTY>
+<!ATTLIST point
+    type                CDATA   #REQUIRED
+    id                  CDATA   #REQUIRED
+    x                   CDATA   #REQUIRED
+    y                   CDATA   #REQUIRED
+>
+
+<!ELEMENT tdata (#PCDATA)>
+<!ATTLIST tdata
+    type                CDATA    #REQUIRED
+    key                 CDATA   #REQUIRED
+    value               CDATA   #REQUIRED
+>

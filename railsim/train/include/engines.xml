@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ Document   : engines.xml
+ Created on : 6. September 2007, 12:53
+ Author     : js
+ Description:
+  Purpose of the document follows.
+-->
+
+<multi>
+	<engine name="Testmotor1" id="1">
+		<power power="1000" maxspeed="200" acceleration="1" deceleration="2" />
+	</engine>
+
+	<engine name="Testmotor2" id="2">
+		<power power="1000" maxspeed="200" acceleration="1" deceleration="2" />
+	</engine>
+</multi>

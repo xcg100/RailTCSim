@@ -1,0 +1,111 @@
+Fehler: Signalbilder manchmal nicht gespeichert/richtig angezeigt?
+
+Z1 should start?
+Z1 start!
+Z1 make train: Z1190910277139
+Exception in thread "Timer-80" java.lang.NullPointerException
+        at jshomeorg.simplytrain.train.fulltrain.onTrack(fulltrain.java:195)
+        at jshomeorg.simplytrain.train.fulltrain.onTrack(fulltrain.java:237)
+        at jshomeorg.simplytrain.service.trackObjects.trainStartObject.nextTrain(trainStartObject.java:68)
+        at jshomeorg.simplytrain.service.trackObjects.trainStartObject.newTrain(trainStartObject.java:98)
+        at jshomeorg.simplytrain.painter.run_trainstarter(painter.java:746)
+        at jshomeorg.simplytrain.painter$9.run(painter.java:898)
+        at java.util.TimerThread.mainLoop(Timer.java:512)
+        at java.util.TimerThread.run(Timer.java:462)
+
+
+Fehler: Wenn neue Route zu Signal-Fahrstraße hinzu aber Signal schon mit Aufträgen in pathqueue, wird neue
+Route nicht gesehen!
+
+Einzelne Fahrstraßen können abgeschaltet werden - werden dann bei Routensuche nicht beachtet, Gleise sind aber
+weiterhin gesperrt gegen Editieren
+
+Uhrzeit: Bei NEU Startzeit erfragen, mit speichern, beim laden wieder setzen
+
+Gleisbau: Gleise werden nicht sofort gebaut, nach setzen eines Gleises Gleis in Gelb, dann per 
+"bau starten" Schalter Bau beginnen (vgl. Transport-Gigant), Gleisobjekte können erst auf gebauten
+Gleisen gesetzt werden, ebenfalls Fahrstraßen
+
+während Gleisbau Fahrzeug auf Gleis, das gebaut wird - Zug
+
+
+
+Zug-Vorläufer: 3 Signale laufen
+alle trackObjects, die etwas am Zug ändern (nur bei vmax kleiner setzen und Zugstop und?) werden 
+gespeichert (queue bis vorbeigefahren) und Abstände zum Zuganfang bei jedem 
+prerunner-Lauf berechnet -> max-Geschwindigkeiten ermitteln
+
+Am Signal: Fahrstraße passend zum Zugziel/Route setzen
+
+Züge haben Routen, Routen bestimmen Fahrstraßen an Signalen
+
+trackObjecte erzeugen trainorder, Züge haben vMax neben vCurrent und vTrainMax. vTrainMax ergibt sich aus
+Wagen und Lok, vMax aus TrackObjects. vCurrent wird über Zugdaten (Gewicht, Leistung->Beschleunigung, 
+Leistung->Bremsen) errechnet mit Ziel min(vMax,vTrainMax) zu erreichen.
+Signale setzen bei Rot ebenfalls setspeed trainorder, ändern bzw. löschen diese bei Grün
+setspeeds werden entsprechend nötige Entfernungen vor trackObject in trainorder eingefügt
+trainorders eines Pakets (setspeed zu einem trackObject) kennen sich um verändert zu werden
+trainorder selbst sorgt für nötigen zusätzlichen Eintragungen
+
+
+
+Fahrstraßen merken sich alle Gleise und Weichen unterwegs -> Anfragen ob frei, dann belegen und Weichen schalten
+1. Gleis einer Fahrstraße wird NICHT reserviert, letztes wird reserviert
+wenn eine Weiche das 1. Gleis ist wird sie geschaltet, auch wenn sie NICHT reserviert wird
+
+Signale ohne Fahrstraßen suchen beim Laden oder neu setzen automatisch eine Fahrstraße, sofern dabei keine
+Weichen gefunden werden (track.getListToNextStopObject())
+
+Signale aktiv schalten? Nur dann reagiert sie auf Fahrstraßenwünsche und automatische Fahrstraßen werden
+gesucht. Nötig für Gleisbearbeitung (siehe unten)
+
+alle Vorsignale zwischen Signal und Ende Fahrstraße in Richtung finden und mit Abschluss-Signal verknüpfen,
+Vorsignale löschen Verknüpfung wenn 
+ - Zug vorbei und rot
+ - rot geworden
+
+wenn Gleis Teil einer Fahrstraße (muß nicht geschaltet sein, nur deffiniert), Zähler ++
+Editieren von Gleis nur möglich, wenn Fahrstraßenzähler==0 - editieren: verschieben, drehen, löschen, biegen
+Weiche setzen möglich
+Weiche schalten nur möglich, wenn Fahrstraßenzähler==0
+
+Route: Befehle für Zug (fahre zu Ziel, warte, umdrehen, nächste Route, Unterroute, kuppeln, abkuppeln, ...)
+train.run -> Prozesscounter und Route, route.get(PC).run(train) - ruft train Befehle für Routen-Befehl auf,
+Unterroute: PC und alte Route auf Stack
+route.get(PC)==null: Werte von Stack
+Befehle zählen selbst PC hoch, wenn nötig
+
+alles Teil des pathableObject - nur Signalbilder (Tempo, Grafik) wird von abgeleitetem Object bestimmt
+
+JavaVM Optionen: -Xms100m -Xmx500m
+
+TrackObject-Animation: "irgendwo" Animation registrieren: Nx aufrufen, Graphics2D wird dazu gespeichert, 
+außerdem in track bei neuem Malen diese Graphics2D ersetzen - HashMap: trackObjectAnim / trackObject.toa
+
+Track-Gruppen: fester Verbund von Gleisen, z.B. DKWs. Können nicht getrennt werden, 
+verschieben alle, andocken an einem der freien Punkte, Rotation um Mittelpunkt mit Rotationsformel
+
+TrackObjects werden im Track als <trackObject> gespeichert mit <todata> (oder <data> ??) für eigene Daten, 
+Fahrstraßen werden später gespeichert nach allen Tracks.
+
+Maßstab: alle 30 Millisekunden Bewegung, 5 Punkte im Test -> 33 1/2 pro Sekunde x5: ca. 166 Punkte pro Sekunde
+100 km/h = 27.7 m/s
+Gleisabstand: 2x4 Punkte
+1435 Millimetern = 1,435 Meter
+Wagenlänge im Test: 50 Punkte
+Wagenlänge in Realen: ca. 20 Meter Personen, ca. 10 Meter Güter
+gute Länge für 20 Meter: 60 Punkte
+gute Länge für 10 Meter: 30 Punkte
+
+3 Punkte = 1 Meter
+Gleisabstand 2x3 Punkte!
+bei 100 km/h 82 Punkte/s   =  82/33=2,5  Punkte pro 30 Milli
+bei 200 km/h 166 Punkte/s  = 166/33=5,01 Punkte pro 30 Milli
+bei  40 km/h 11m/s 33 Punkte/s   =  33/33=1  Punkte pro 30 Milli
+
+Gleisberührungen/-kreuzungen finden: Hintergrundthread wartet auf Prüfungsaufgaben, beim Laden über alle:
+Gleise finden, deren Bounds sich berühren (schneiden), dann Abstände zwischen allen Gleispunkten ermitteln, wenn einer <4: Berührung
+Gleise gegenseitig in ein HashSet eintragen
+Hintergrundthread wird später vom Editor mit neuen Berechnungen gefüllt wenn ein Gleis im Editor verändert wurde/neu hinzu,
+löscht dann auch ggf. alte HashSet-Einträge
+

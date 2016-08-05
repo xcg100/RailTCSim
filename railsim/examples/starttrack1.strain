@@ -1,0 +1,1258 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<savegame version='1.0' name='t1.strain'>
+ <tracks>
+  <track x='317' y='181' rotation='0.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='397' y='181' rotation='0.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='557' y='181' rotation='180.0' angel='-0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='557' y='181' rotation='0.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='6' forward='n' name='hvsignal 15' region='A'  hash='1'  type='hvsignal2'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='y'/>
+    <data key='cstate' value='0'/>
+    <data key='mix' value='n'/>
+   </trackobject>
+  </track>
+  <track x='637' y='181' rotation='0.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='717' y='181' rotation='0.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='797' y='181' rotation='0.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='27' forward='y' name='G1' region='A'  hash='2'  type='destinationPoint'>
+   </trackobject>
+  </track>
+  <track x='877' y='181' rotation='0.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='0' forward='y' name='hvsignal 8' region='A'  hash='3'  type='hvsignal1'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='y'/>
+    <data key='cstate' value='0'/>
+   </trackobject>
+  </track>
+  <track x='957' y='181' rotation='0.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1117' y='181' rotation='180.0' angel='-0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1117' y='181' rotation='0.0' angel='-45.0' length='145.6639969244288' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='13' forward='y' name='hvpresignal 6' region='A'  hash='4'  type='hvpresignal1'>
+   </trackobject>
+  </track>
+  <track x='1220' y='284' rotation='270.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='3' forward='y' name='sign2_7' region='undef'  hash='5'  type='speedSign2'>
+    <data key='enabled' value='y'/>
+    <data key='speedlimit' value='160'/>
+   </trackobject>
+  </track>
+  <track x='1220' y='364' rotation='270.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='50' forward='y' name='hvsignal 52' region='A'  hash='6'  type='hvsignal1'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='y'/>
+    <data key='cstate' value='0'/>
+   </trackobject>
+  </track>
+  <track x='1220' y='524' rotation='90.0' angel='-0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1220' y='524' rotation='270.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1220' y='604' rotation='270.0' angel='-45.0' length='106.06601717798213' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1065' y='679' rotation='0.0' angel='-0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1065' y='679' rotation='180.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='985' y='679' rotation='180.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='43' forward='y' name='hvpresignal 5' region='B'  hash='7'  type='hvpresignal1'>
+   </trackobject>
+  </track>
+  <track x='905' y='679' rotation='180.0' angel='-38.91766330671794' length='173.51080657987848' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='155' forward='y' name='sign2_8' region='undef'  hash='8'  type='speedSign2'>
+    <data key='enabled' value='y'/>
+    <data key='speedlimit' value='80'/>
+   </trackobject>
+  </track>
+  <track x='645' y='483' rotation='0.0' angel='0.0' length='80.0' level='-2' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='725' y='483' rotation='0.0' angel='0.0' length='80.0' level='-2' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='805' y='483' rotation='0.0' angel='0.0' length='80.0' level='-2' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='950' y='344' rotation='309.87598348841107' angel='-64.93799174420555' length='153.44705927452634' level='-2' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='950' y='344' rotation='129.8759834884111' angel='61.08921319672686' length='162.97545827516484' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='6' forward='n' name='hvpresignal 11' region='B'  hash='9'  type='hvpresignal1'>
+   </trackobject>
+   <trackobject index='124' forward='n' name='hvsignal 48' region='B'  hash='10'  type='hvsignal2'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='n'/>
+    <data key='cstate' value='0'/>
+    <data key='mix' value='y'/>
+   </trackobject>
+  </track>
+  <track x='790' y='375' rotation='252.0544098818648' angel='4.355131752349649' length='99.0' level='0' >
+   <data key='pd' value='embankmentColor_1'/>
+   <data key='pd' value='embankmentPainter_1'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='770' y='570' rotation='102.16467338656412' angel='-10.7' length='99.0' level='2' >
+   <data key='pd' value='embankmentColor_1'/>
+   <data key='pd' value='embankmentPainter_1'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='645' y='483' rotation='180.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='565' y='483' rotation='180.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='72' forward='y' name='G1' region='B'  hash='11'  type='destinationPoint'>
+   </trackobject>
+  </track>
+  <track x='485' y='483' rotation='180.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='24' forward='y' name='hvsignal 49' region='B'  hash='12'  type='hvsignal1'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='y'/>
+    <data key='cstate' value='0'/>
+   </trackobject>
+  </track>
+  <track x='405' y='483' rotation='180.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='245' y='483' rotation='0.0' angel='-0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='245' y='483' rotation='180.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='63' forward='y' name='hvpresignal 7' region='B'  hash='13'  type='hvpresignal1'>
+   </trackobject>
+  </track>
+  <track x='165' y='483' rotation='180.0' angel='43.13737905069331' length='174.04022523543227' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='38' y='602' rotation='266.2747581013866' angel='43.13737905069331' length='174.04022523543227' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='154' forward='y' name='hvpresignal 10' region='B'  hash='14'  type='hvpresignal1'>
+   </trackobject>
+  </track>
+  <track x='148' y='736' rotation='352.54951620277325' angel='58.541997506080975' length='179.91386828146406' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='204' forward='y' name='sign2_9' region='undef'  hash='15'  type='speedSign2'>
+    <data key='enabled' value='y'/>
+    <data key='speedlimit' value='120'/>
+   </trackobject>
+  </track>
+  <track x='261' y='596' rotation='109.6335112149352' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='47' forward='y' name='hvsignal 53' region='B'  hash='16'  type='hvsignal1'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='y'/>
+    <data key='cstate' value='0'/>
+   </trackobject>
+  </track>
+  <track x='234' y='521' rotation='109.6335112149352' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='207' y='446' rotation='109.6335112149352' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='6' forward='y' name='hvpresignal 8' region='A'  hash='17'  type='hvpresignal1'>
+   </trackobject>
+  </track>
+  <track x='180' y='371' rotation='109.6335112149352' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='153' y='296' rotation='109.6335112149352' angel='-47.0167556074676' length='113.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='317' y='181' rotation='180.0' angel='7.8' length='113.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='32' forward='n' name='hvsignal 6' region='A'  hash='18'  type='hvsignal2'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='y'/>
+    <data key='cstate' value='0'/>
+    <data key='mix' value='y'/>
+   </trackobject>
+  </track>
+  <track x='397' y='181' rotation='0.0' angel='14.599999999999994' length='112.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1037' y='181' rotation='180.0' angel='-17.19999999999999' length='95.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='774' y='125' rotation='0.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='39' forward='y' name='G2' region='A'  hash='19'  type='destinationPoint'>
+   </trackobject>
+  </track>
+  <track x='854' y='125' rotation='0.0' angel='-17.2' length='96.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='0' forward='y' name='hvsignal 7' region='A'  hash='20'  type='hvsignal1'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='n'/>
+    <data key='cstate' value='0'/>
+   </trackobject>
+  </track>
+  <track x='774' y='125' rotation='180.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='694' y='125' rotation='180.0' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='614' y='125' rotation='180.0' angel='14.6' length='113.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='325' y='483' rotation='0.0' angel='-16.299999999999997' length='86.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='885' y='483' rotation='179.99999999999997' angel='17.600000000000023' length='80.0' level='-2' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='572' y='531' rotation='0.0' angel='0.0' length='80.0' level='-2' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='652' y='531' rotation='0.0' angel='0.0' length='80.0' level='-2' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='732' y='531' rotation='0.0' angel='17.6' length='81.0' level='-2' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='572' y='531' rotation='180.0' angel='0.0' length='80.0' level='-2' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='68' forward='y' name='G2' region='B'  hash='21'  type='destinationPoint'>
+   </trackobject>
+  </track>
+  <track x='492' y='531' rotation='180.0' angel='-16.3' length='87.0' level='-2' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='34' forward='y' name='hvsignal 51' region='B'  hash='22'  type='hvsignal1'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='n'/>
+    <data key='cstate' value='0'/>
+   </trackobject>
+  </track>
+  <track x='839' y='248' rotation='179.12638871386957' angel='0.23680564306522456' length='141.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='839' y='248' rotation='359.1263887138696' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='66' forward='y' name='hvsignal 16' region='A'  hash='23'  type='hvsignal1'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='y'/>
+    <data key='cstate' value='0'/>
+   </trackobject>
+  </track>
+  <track x='919' y='249' rotation='359.1263887138696' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='999' y='250' rotation='359.1263887138696' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1079' y='251' rotation='359.1263887138696' angel='-42.48981167225287' length='123.79418403139947' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1169' y='336' rotation='274.14676536936383' angel='0.47036302949345554' length='149.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1145' y='679' rotation='0.0' angel='45.64374571417539' length='62.93647591023825' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1189' y='634' rotation='91.28749142835078' angel='1.8999999999999986' length='149.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='100' forward='n' name='hvsignal 14' region='A'  hash='24'  type='hvsignal1'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='n'/>
+    <data key='cstate' value='0'/>
+   </trackobject>
+  </track>
+  <track x='477' y='181' rotation='180.0' angel='90.0' length='64.8459713474939' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='557' y='246' rotation='180.0' angel='-0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='557' y='246' rotation='0.0' angel='-0.20000000000000284' length='141.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1220' y='444' rotation='90.0' angel='-18.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1245' y='368' rotation='54.0' angel='22.849051319055306' length='109.88175462741756' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='107' forward='n' name='hvsignal 17' region='Start'  hash='25'  type='hvsignal1'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='n'/>
+    <data key='cstate' value='0'/>
+   </trackobject>
+  </track>
+  <track x='1270' y='261' rotation='99.69810263811061' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1257' y='182' rotation='99.69810263811061' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='16' forward='n' name='Start1' region='Start'  hash='26'  type='trainStartPoint'>
+   </trackobject>
+  </track>
+  <track x='1244' y='103' rotation='99.69810263811061' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1245' y='368' rotation='54.0' angel='-3.5596679689944963' length='89.49860334105779' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1302' y='299' rotation='46.88066406201101' angel='32.09587997424586' length='78.44743462982075' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1317' y='222' rotation='111.07242401050273' angel='-8.077807218586216' length='80.049984384758' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='14' forward='n' name='hvsignal 18' region='Start'  hash='27'  type='hvsignal1'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='n'/>
+    <data key='cstate' value='0'/>
+   </trackobject>
+   <trackobject index='75' forward='n' name='Start2' region='Start'  hash='28'  type='trainStartPoint'>
+   </trackobject>
+  </track>
+  <track x='1299' y='144' rotation='94.9168095733303' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1292' y='64' rotation='94.9168095733303' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1302' y='299' rotation='46.88066406201101' angel='14.559715459669157' length='89.94442728707543' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1345' y='220' rotation='76.00009498134932' angel='14.559715459669157' length='89.94442728707543' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+   <trackobject index='22' forward='n' name='hvsignal 19' region='Start'  hash='29'  type='hvsignal1'>
+    <data key='enabled' value='y'/>
+    <data key='presignal' value='n'/>
+    <data key='cstate' value='0'/>
+   </trackobject>
+   <trackobject index='88' forward='n' name='Start3' region='Start'  hash='30'  type='trainStartPoint'>
+   </trackobject>
+  </track>
+  <track x='1344' y='130' rotation='105.11952590068763' angel='-4.650351642976219' length='93.55746896961247' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1327' y='38' rotation='95.8188226147352' angel='-4.650351642976219' length='93.55746896961247' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1231' y='24' rotation='99.69810263811061' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1218' y='-55' rotation='99.69810263811061' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1205' y='-134' rotation='99.69810263811061' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1285' y='-16' rotation='94.9168095733303' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1278' y='-96' rotation='94.9168095733303' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1271' y='-176' rotation='94.9168095733303' angel='0.0' length='80.0' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1325' y='-56' rotation='86.51811932878276' angel='-4.650351642976219' length='93.55746896961247' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <track x='1338' y='-149' rotation='77.21741604283032' angel='-4.650351642976219' length='93.55746896961247' level='0' >
+   <data key='pd' value='additionalColorBase'/>
+   <data key='pd' value='additionalPainterBase'/>
+   <data key='pd' value='sleeperColorBase'/>
+   <data key='pd' value='sleeperPainterBase'/>
+   <data key='pd' value='railColorBase'/>
+   <data key='pd' value='railPainterBase'/>
+  </track>
+  <connect id='0' type='prev' destid='41' />
+  <connect id='0' type='next0' destid='1' set='y' />
+  <connect id='0' type='next1' destid='42' />
+  <connect id='1' type='prev' destid='0' />
+  <connect id='1' type='next0' destid='2' set='y' />
+  <connect id='2' type='prev' destid='3' />
+  <connect id='2' type='next0' destid='1' />
+  <connect id='2' type='next1' destid='64' set='y' />
+  <connect id='3' type='prev' destid='2' />
+  <connect id='3' type='next0' destid='4' set='y' />
+  <connect id='4' type='prev' destid='3' />
+  <connect id='4' type='next0' destid='5' set='y' />
+  <connect id='5' type='prev' destid='4' />
+  <connect id='5' type='next0' destid='6' set='y' />
+  <connect id='6' type='prev' destid='5' />
+  <connect id='6' type='next0' destid='7' set='y' />
+  <connect id='7' type='prev' destid='6' />
+  <connect id='7' type='next0' destid='8' set='y' />
+  <connect id='8' type='prev' destid='7' />
+  <connect id='8' type='next0' destid='9' set='y' />
+  <connect id='9' type='prev' destid='10' />
+  <connect id='9' type='next0' destid='8' set='y' />
+  <connect id='9' type='next1' destid='43' />
+  <connect id='10' type='prev' destid='9' />
+  <connect id='10' type='next0' destid='11' set='y' />
+  <connect id='11' type='prev' destid='10' />
+  <connect id='11' type='next0' destid='12' set='y' />
+  <connect id='12' type='prev' destid='11' />
+  <connect id='12' type='next0' destid='13' set='y' />
+  <connect id='13' type='prev' destid='14' />
+  <connect id='13' type='next0' destid='12' />
+  <connect id='13' type='next1' destid='67' set='y' />
+  <connect id='14' type='prev' destid='13' />
+  <connect id='14' type='next0' destid='15' set='y' />
+  <connect id='15' type='prev' destid='14' />
+  <connect id='15' type='next0' destid='16' set='y' />
+  <connect id='16' type='prev' destid='17' />
+  <connect id='16' type='next0' destid='15' set='y' />
+  <connect id='16' type='next1' destid='62' />
+  <connect id='17' type='prev' destid='16' />
+  <connect id='17' type='next0' destid='18' set='y' />
+  <connect id='18' type='prev' destid='17' />
+  <connect id='18' type='next0' destid='19' set='y' />
+  <connect id='19' type='prev' destid='18' />
+  <connect id='19' type='next0' destid='26' set='y' />
+  <connect id='20' type='prev' destid='27' />
+  <connect id='20' type='next0' destid='21' set='y' />
+  <connect id='21' type='prev' destid='20' />
+  <connect id='21' type='next0' destid='22' set='y' />
+  <connect id='22' type='prev' destid='21' />
+  <connect id='22' type='next0' destid='23' set='y' />
+  <connect id='23' type='prev' destid='24' />
+  <connect id='23' type='next0' destid='22' set='y' />
+  <connect id='23' type='next1' destid='50' />
+  <connect id='24' type='prev' destid='23' />
+  <connect id='24' type='next0' destid='25' set='y' />
+  <connect id='25' type='prev' destid='24' />
+  <connect id='25' type='next0' destid='26' set='y' />
+  <connect id='26' type='prev' destid='19' />
+  <connect id='26' type='next0' destid='25' set='y' />
+  <connect id='27' type='prev' destid='20' />
+  <connect id='27' type='next0' destid='28' set='y' />
+  <connect id='28' type='prev' destid='27' />
+  <connect id='28' type='next0' destid='29' set='y' />
+  <connect id='29' type='prev' destid='28' />
+  <connect id='29' type='next0' destid='30' set='y' />
+  <connect id='30' type='prev' destid='29' />
+  <connect id='30' type='next0' destid='31' set='y' />
+  <connect id='31' type='prev' destid='32' />
+  <connect id='31' type='next0' destid='30' />
+  <connect id='31' type='next1' destid='49' set='y' />
+  <connect id='32' type='prev' destid='31' />
+  <connect id='32' type='next0' destid='33' set='y' />
+  <connect id='33' type='prev' destid='32' />
+  <connect id='33' type='next0' destid='34' set='y' />
+  <connect id='34' type='prev' destid='33' />
+  <connect id='34' type='next0' destid='35' set='y' />
+  <connect id='35' type='prev' destid='34' />
+  <connect id='35' type='next0' destid='36' set='y' />
+  <connect id='36' type='prev' destid='35' />
+  <connect id='36' type='next0' destid='37' set='y' />
+  <connect id='37' type='prev' destid='36' />
+  <connect id='37' type='next0' destid='38' set='y' />
+  <connect id='38' type='prev' destid='37' />
+  <connect id='38' type='next0' destid='39' set='y' />
+  <connect id='39' type='prev' destid='38' />
+  <connect id='39' type='next0' destid='40' set='y' />
+  <connect id='40' type='prev' destid='39' />
+  <connect id='40' type='next0' destid='41' set='y' />
+  <connect id='41' type='prev' destid='0' />
+  <connect id='41' type='next0' destid='40' set='y' />
+  <connect id='42' type='prev' destid='0' />
+  <connect id='42' type='next0' destid='48' set='y' />
+  <connect id='43' type='prev' destid='9' />
+  <connect id='43' type='next0' destid='45' set='y' />
+  <connect id='44' type='prev' destid='46' />
+  <connect id='44' type='next0' destid='45' set='y' />
+  <connect id='45' type='prev' destid='44' />
+  <connect id='45' type='next0' destid='43' set='y' />
+  <connect id='46' type='prev' destid='44' />
+  <connect id='46' type='next0' destid='47' set='y' />
+  <connect id='47' type='prev' destid='46' />
+  <connect id='47' type='next0' destid='48' set='y' />
+  <connect id='48' type='prev' destid='47' />
+  <connect id='48' type='next0' destid='42' set='y' />
+  <connect id='49' type='prev' destid='31' />
+  <connect id='49' type='next0' destid='55' set='y' />
+  <connect id='50' type='prev' destid='23' />
+  <connect id='50' type='next0' destid='53' set='y' />
+  <connect id='51' type='prev' destid='54' />
+  <connect id='51' type='next0' destid='52' set='y' />
+  <connect id='52' type='prev' destid='51' />
+  <connect id='52' type='next0' destid='53' set='y' />
+  <connect id='53' type='prev' destid='52' />
+  <connect id='53' type='next0' destid='50' set='y' />
+  <connect id='54' type='prev' destid='51' />
+  <connect id='54' type='next0' destid='55' set='y' />
+  <connect id='55' type='prev' destid='54' />
+  <connect id='55' type='next0' destid='49' set='y' />
+  <connect id='56' type='prev' destid='57' />
+  <connect id='56' type='next0' destid='66' set='y' />
+  <connect id='57' type='prev' destid='56' />
+  <connect id='57' type='next0' destid='58' set='y' />
+  <connect id='58' type='prev' destid='57' />
+  <connect id='58' type='next0' destid='59' set='y' />
+  <connect id='59' type='prev' destid='58' />
+  <connect id='59' type='next0' destid='60' set='y' />
+  <connect id='60' type='prev' destid='59' />
+  <connect id='60' type='next0' destid='61' set='y' />
+  <connect id='61' type='prev' destid='60' />
+  <connect id='61' type='next0' destid='63' set='y' />
+  <connect id='62' type='prev' destid='16' />
+  <connect id='62' type='next0' destid='63' set='y' />
+  <connect id='63' type='prev' destid='62' />
+  <connect id='63' type='next0' destid='61' set='y' />
+  <connect id='64' type='prev' destid='2' />
+  <connect id='64' type='next0' destid='65' set='y' />
+  <connect id='65' type='prev' destid='66' />
+  <connect id='65' type='next0' destid='64' set='y' />
+  <connect id='66' type='prev' destid='65' />
+  <connect id='66' type='next0' destid='56' set='y' />
+  <connect id='67' type='prev' destid='13' />
+  <connect id='67' type='next0' destid='68' />
+  <connect id='67' type='next1' destid='72' set='y' />
+  <connect id='68' type='prev' destid='67' />
+  <connect id='68' type='next0' destid='69' set='y' />
+  <connect id='69' type='prev' destid='68' />
+  <connect id='69' type='next0' destid='70' set='y' />
+  <connect id='70' type='prev' destid='69' />
+  <connect id='70' type='next0' destid='71' set='y' />
+  <connect id='71' type='prev' destid='70' />
+  <connect id='71' type='next0' destid='81' set='y' />
+  <connect id='72' type='prev' destid='67' />
+  <connect id='72' type='next0' destid='73' />
+  <connect id='72' type='next1' destid='77' set='y' />
+  <connect id='73' type='prev' destid='72' />
+  <connect id='73' type='next0' destid='74' set='y' />
+  <connect id='74' type='prev' destid='73' />
+  <connect id='74' type='next0' destid='75' set='y' />
+  <connect id='75' type='prev' destid='74' />
+  <connect id='75' type='next0' destid='76' set='y' />
+  <connect id='76' type='prev' destid='75' />
+  <connect id='76' type='next0' destid='84' set='y' />
+  <connect id='77' type='prev' destid='72' />
+  <connect id='77' type='next0' destid='78' set='y' />
+  <connect id='78' type='prev' destid='77' />
+  <connect id='78' type='next0' destid='79' set='y' />
+  <connect id='79' type='prev' destid='78' />
+  <connect id='79' type='next0' destid='80' set='y' />
+  <connect id='80' type='prev' destid='79' />
+  <connect id='80' type='next0' destid='87' set='y' />
+  <connect id='81' type='prev' destid='71' />
+  <connect id='81' type='next0' destid='82' set='y' />
+  <connect id='82' type='prev' destid='81' />
+  <connect id='82' type='next0' destid='83' set='y' />
+  <connect id='83' type='prev' destid='82' />
+  <connect id='84' type='prev' destid='76' />
+  <connect id='84' type='next0' destid='85' set='y' />
+  <connect id='85' type='prev' destid='84' />
+  <connect id='85' type='next0' destid='86' set='y' />
+  <connect id='86' type='prev' destid='85' />
+  <connect id='87' type='prev' destid='80' />
+  <connect id='87' type='next0' destid='88' set='y' />
+  <connect id='88' type='prev' destid='87' />
+ </tracks>
+ <routes>
+  <route name='Beispiel-Ziel 1'>
+   <command name='fahre zu' type='gotoDestination'>
+    <data key='destination' value='2'/>
+   </command>
+   <command name='Richtung wechseln' type='changeDirection'>
+   </command>
+   <command name='warten' type='waitMinutes'>
+    <data key='stop' value='30'/>
+   </command>
+   <command name='fahre zu' type='gotoDestination'>
+    <data key='destination' value='11'/>
+   </command>
+   <command name='warten' type='waitMinutes'>
+    <data key='stop' value='30'/>
+   </command>
+   <command name='nächste Route' type='nextRoute'>
+    <data key='route' value='Beispiel-Ziel 2'/>
+   </command>
+  </route>
+  <route name='Beispiel-Ziel 2'>
+   <command name='fahre zu' type='gotoDestination'>
+    <data key='destination' value='19'/>
+   </command>
+   <command name='warten' type='waitMinutes'>
+    <data key='stop' value='10'/>
+   </command>
+   <command name='fahre zu' type='gotoDestination'>
+    <data key='destination' value='21'/>
+   </command>
+   <command name='warten' type='waitMinutes'>
+    <data key='stop' value='20'/>
+   </command>
+   <command name='nächste Route' type='nextRoute'>
+    <data key='route' value='Beispiel-Ziel 1'/>
+   </command>
+  </route>
+ </routes>
+ <signaldata hash='27'>
+  <path name='f4' state='1' mode='-'>
+   <pathelement id='74'  cstate='-' />
+   <pathelement id='73'  cstate='-' />
+   <pathelement id='72'  set='n' cstate='-' />
+   <pathelement id='67'  set='y' cstate='-' />
+   <pathelement id='13'  set='y' cstate='-' />
+   <pathelement id='14'  cstate='-' />
+   <pathelement id='15'  cstate='-' />
+   <pathelement id='16'  set='n' cstate='-' />
+   <pathelement id='17'  cstate='-' />
+   <pathelement id='18'  cstate='-' />
+   <pathelement id='19'  cstate='-' />
+   <pathelement id='26'  cstate='-' />
+   <pathelement id='25'  cstate='-' />
+   <pathelement id='24'  cstate='-' />
+  </path>
+ </signaldata>
+ <signaldata hash='16'>
+  <path name='AutoFS 11746536107242' state='1' mode='automatic'>
+   <pathelement id='36'  cstate='-' />
+   <pathelement id='37'  cstate='-' />
+   <pathelement id='38'  cstate='-' />
+   <pathelement id='39'  cstate='-' />
+   <pathelement id='40'  cstate='-' />
+   <pathelement id='41'  cstate='-' />
+  </path>
+ </signaldata>
+ <signaldata hash='22'>
+  <path name='f3' state='1' mode='-'>
+   <pathelement id='55'  cstate='-' />
+   <pathelement id='49'  cstate='-' />
+   <pathelement id='31'  set='y' cstate='-' />
+   <pathelement id='32'  cstate='-' />
+   <pathelement id='33'  cstate='-' />
+   <pathelement id='34'  cstate='-' />
+   <pathelement id='35'  cstate='-' />
+   <pathelement id='36'  cstate='-' />
+  </path>
+ </signaldata>
+ <signaldata hash='12'>
+  <path name='f2' state='1' mode='-'>
+   <pathelement id='29'  cstate='-' />
+   <pathelement id='30'  cstate='-' />
+   <pathelement id='31'  set='n' cstate='-' />
+   <pathelement id='32'  cstate='-' />
+   <pathelement id='33'  cstate='-' />
+   <pathelement id='34'  cstate='-' />
+   <pathelement id='35'  cstate='-' />
+   <pathelement id='36'  cstate='-' />
+  </path>
+ </signaldata>
+ <signaldata hash='1'>
+  <path name='f2' state='1' mode='-'>
+   <pathelement id='3'  cstate='-' />
+   <pathelement id='2'  set='y' cstate='-' />
+   <pathelement id='64'  cstate='-' />
+   <pathelement id='65'  cstate='-' />
+   <pathelement id='66'  cstate='-' />
+   <pathelement id='56'  cstate='-' />
+   <pathelement id='57'  cstate='-' />
+  </path>
+ </signaldata>
+ <signaldata hash='3'>
+  <path name='f4' state='1' mode='-'>
+   <pathelement id='7'  cstate='-' />
+   <pathelement id='8'  cstate='-' />
+   <pathelement id='9'  set='n' cstate='-' />
+   <pathelement id='10'  cstate='-' />
+   <pathelement id='11'  cstate='-' />
+   <pathelement id='12'  cstate='-' />
+  </path>
+ </signaldata>
+ <signaldata hash='23'>
+  <path name='AutoFS 22809482385331' state='1' mode='automatic'>
+   <pathelement id='57'  cstate='-' />
+   <pathelement id='58'  cstate='-' />
+   <pathelement id='59'  cstate='-' />
+   <pathelement id='60'  cstate='-' />
+   <pathelement id='61'  cstate='-' />
+   <pathelement id='63'  cstate='-' />
+  </path>
+ </signaldata>
+ <signaldata hash='24'>
+  <path name='f0' state='1' mode='-'>
+   <pathelement id='63'  cstate='-' />
+   <pathelement id='62'  cstate='-' />
+   <pathelement id='16'  set='y' cstate='-' />
+   <pathelement id='17'  cstate='-' />
+   <pathelement id='18'  cstate='-' />
+   <pathelement id='19'  cstate='-' />
+   <pathelement id='26'  cstate='-' />
+   <pathelement id='25'  cstate='-' />
+   <pathelement id='24'  cstate='-' />
+  </path>
+ </signaldata>
+ <signaldata hash='18'>
+  <path name='f8' state='1' mode='-'>
+   <pathelement id='41'  cstate='-' />
+   <pathelement id='0'  set='n' cstate='-' />
+   <pathelement id='1'  cstate='-' />
+   <pathelement id='2'  set='n' cstate='-' />
+   <pathelement id='3'  cstate='-' />
+   <pathelement id='4'  cstate='-' />
+   <pathelement id='5'  cstate='-' />
+   <pathelement id='6'  cstate='-' />
+   <pathroute name='Beispiel-Ziel 1' priority='1'>
+   </pathroute>
+   <pathroute name='Beispiel-Ziel 2' priority='2'>
+   </pathroute>
+  </path>
+  <path name='f9' state='2' mode='-'>
+   <pathelement id='41'  cstate='-' />
+   <pathelement id='0'  set='y' cstate='-' />
+   <pathelement id='42'  cstate='-' />
+   <pathelement id='48'  cstate='-' />
+   <pathelement id='47'  cstate='-' />
+   <pathelement id='46'  cstate='-' />
+   <pathelement id='44'  cstate='-' />
+   <pathroute name='Beispiel-Ziel 2' priority='1'>
+   </pathroute>
+  </path>
+ </signaldata>
+ <signaldata hash='25'>
+  <path name='f3' state='1' mode='-'>
+   <pathelement id='68'  cstate='-' />
+   <pathelement id='67'  set='n' cstate='-' />
+   <pathelement id='13'  set='y' cstate='-' />
+   <pathelement id='14'  cstate='-' />
+   <pathelement id='15'  cstate='-' />
+   <pathelement id='16'  set='n' cstate='-' />
+   <pathelement id='17'  cstate='-' />
+   <pathelement id='18'  cstate='-' />
+   <pathelement id='19'  cstate='-' />
+   <pathelement id='26'  cstate='-' />
+   <pathelement id='25'  cstate='-' />
+   <pathelement id='24'  cstate='-' />
+  </path>
+ </signaldata>
+ <signaldata hash='29'>
+  <path name='f5' state='1' mode='-'>
+   <pathelement id='78'  cstate='-' />
+   <pathelement id='77'  cstate='-' />
+   <pathelement id='72'  set='y' cstate='-' />
+   <pathelement id='67'  set='y' cstate='-' />
+   <pathelement id='13'  set='y' cstate='-' />
+   <pathelement id='14'  cstate='-' />
+   <pathelement id='15'  cstate='-' />
+   <pathelement id='16'  set='n' cstate='-' />
+   <pathelement id='17'  cstate='-' />
+   <pathelement id='18'  cstate='-' />
+   <pathelement id='19'  cstate='-' />
+   <pathelement id='26'  cstate='-' />
+   <pathelement id='25'  cstate='-' />
+   <pathelement id='24'  cstate='-' />
+  </path>
+ </signaldata>
+ <signaldata hash='6'>
+  <path name='f0' state='1' mode='-'>
+   <pathelement id='12'  cstate='-' />
+   <pathelement id='13'  cstate='-' />
+   <pathelement id='14'  cstate='-' />
+   <pathelement id='15'  cstate='-' />
+   <pathelement id='16'  set='n' cstate='-' />
+   <pathelement id='17'  cstate='-' />
+   <pathelement id='18'  cstate='-' />
+   <pathelement id='19'  cstate='-' />
+   <pathelement id='26'  cstate='-' />
+   <pathelement id='25'  cstate='-' />
+   <pathelement id='24'  cstate='-' />
+  </path>
+ </signaldata>
+ <signaldata hash='10'>
+  <path name='f6' state='1' mode='-'>
+   <pathelement id='24'  cstate='-' />
+   <pathelement id='23'  set='n' cstate='-' />
+   <pathelement id='22'  cstate='-' />
+   <pathelement id='21'  cstate='-' />
+   <pathelement id='20'  cstate='-' />
+   <pathelement id='27'  cstate='-' />
+   <pathelement id='28'  cstate='-' />
+   <pathroute name='Beispiel-Ziel 1' priority='1'>
+   </pathroute>
+   <pathroute name='Beispiel-Ziel 2' priority='2'>
+   </pathroute>
+  </path>
+  <path name='f7' state='2' mode='-'>
+   <pathelement id='24'  cstate='-' />
+   <pathelement id='23'  set='y' cstate='-' />
+   <pathelement id='50'  cstate='-' />
+   <pathelement id='53'  cstate='-' />
+   <pathelement id='52'  cstate='-' />
+   <pathelement id='51'  cstate='-' />
+   <pathelement id='54'  cstate='-' />
+   <pathroute name='Beispiel-Ziel 2' priority='1'>
+   </pathroute>
+  </path>
+ </signaldata>
+ <signaldata hash='20'>
+  <path name='f5' state='1' mode='-'>
+   <pathelement id='45'  cstate='-' />
+   <pathelement id='43'  cstate='-' />
+   <pathelement id='9'  set='y' cstate='-' />
+   <pathelement id='10'  cstate='-' />
+   <pathelement id='11'  cstate='-' />
+   <pathelement id='12'  cstate='-' />
+  </path>
+ </signaldata>
+</savegame>

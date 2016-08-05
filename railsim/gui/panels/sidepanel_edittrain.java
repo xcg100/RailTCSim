@@ -1,0 +1,559 @@
+/*
+ * $Revision: 23 $
+ * Copyright 2008 js-home.org
+ * $Name: not supported by cvs2svn $
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package org.railsim.gui.panels;
+
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+
+import javax.swing.event.TreeModelEvent;
+import javax.swing.event.TreeModelListener;
+import javax.swing.tree.*;
+
+import java.util.*;
+
+import javax.swing.GroupLayout.*;
+
+import org.railsim.*;
+import org.railsim.editor.*;
+import org.railsim.event.AbstractEvent;
+import org.railsim.event.AbstractListener;
+import org.railsim.gui.*;
+import org.railsim.gui.renderer.*;
+import org.railsim.toolset.*;
+import org.railsim.train.*;
+
+/**
+ *
+ * @author js
+ */
+public class sidepanel_edittrain extends javax.swing.JPanel {
+
+	boolean isvisible = false;
+	boolean myClick = false;
+	boolean myEvent = false;
+	boolean buildTree = false;
+	boolean myNotTableClick = false;
+	boolean updatePopup = false;
+	private DefaultTreeModel treeModel = null;
+	private comparableDefaultMutableTreeNode root = null;
+
+	/**
+	 * Creates new form sidepanel_editsignal
+	 */
+	public sidepanel_edittrain() {
+		initComponents();
+
+		root = new comparableDefaultMutableTreeNode("Züge");
+
+		treeModel = new DefaultTreeModel(root);
+		trainsTree.setModel(treeModel);
+		treeModel.addTreeModelListener(new TreeModelListener() {
+			@Override
+			public void treeNodesChanged(TreeModelEvent e) { // editor
+				if (myClick) {
+					return;
+				}
+				Object[] tp = e.getChildren();
+				if (tp.length > 0) {
+					comparableDefaultMutableTreeNode cdmtn = (comparableDefaultMutableTreeNode) tp[0];
+					Object o = cdmtn.getUserObject();
+					if (o instanceof fulltrain) { // neuer Name
+						//((trackObject)o).setName(cdmtn.getUpdatedUserObject().toString());
+						dataCollector.collector.thegame.runAction(new EditorActionEvent2<>("renametrain", (fulltrain) o, cdmtn.getUpdatedUserObject().toString()));
+					} else if (o instanceof starttrain) {
+						//((path)o).setName(cdmtn.getUpdatedUserObject().toString());
+						//dataCollector.collector.thegame.runAction(new EditorActionEvent2<path,String>("renamepath",(path)o,cdmtn.getUpdatedUserObject().toString()));
+					}
+				}
+			}
+
+			@Override
+			public void treeNodesInserted(TreeModelEvent e) {
+			}
+
+			@Override
+			public void treeNodesRemoved(TreeModelEvent e) {
+			}
+
+			@Override
+			public void treeStructureChanged(TreeModelEvent e) {
+			}
+		});
+
+		trainsTree.addMouseListener(new MouseListener() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+
+			@Override
+			public void mousePressed(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				if (e.isPopupTrigger()) {
+					int x = e.getX();
+					int y = e.getY();
+					updatePopup = true;
+					TreePath path = trainsTree.getPathForLocation(x, y);
+					if (path != null) {
+						trainsTree.setSelectionPath(path);
+						/*addMI.setEnabled(false);
+						 copyMI.setEnabled(false);
+						 delMI.setEnabled(false);
+						 delallMI.setEnabled(false);
+						 manualMI.setEnabled(false);
+						 renameMI.setEnabled(false);
+						 penabledMI.setEnabled(false);
+						 penabledMI.setSelected(false); */
+
+						trainsTreePopup.show(trainsTree, x, y);
+						//m_clickedPath = path;
+					}
+					updatePopup = false;
+				}
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+			}
+		});
+		addPropertyChangeListener(MainBar.PANELVISIBILITY, new PropertyChangeListener() {
+			@Override
+			public void propertyChange(PropertyChangeEvent evt) {
+				visibilityChange((Boolean) evt.getNewValue());
+			}
+		});
+		dataCollector.collector.editorEventListeners.addListener(new AbstractListener() {
+			@Override
+			public void action(AbstractEvent e) {
+				trackEvent((EditorEvent) e);
+			}
+		});
+		dataCollector.collector.trainsListListeners.addListener(new AbstractListener() {
+			@Override
+			public void action(AbstractEvent e) {
+				javax.swing.SwingUtilities.invokeLater(new Runnable() {
+					@Override
+					public void run() {
+						updateTree();
+					}
+				});
+			}
+		});
+	}
+
+	/**
+	 * This method is called from within the constructor to
+	 * initialize the form.
+	 * WARNING: Do NOT modify this code. The content of this method is
+	 * always regenerated by the Form Editor.
+	 */
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        trainsTreePopup = new javax.swing.JPopupMenu();
+        renameMI = new javax.swing.JMenuItem();
+        jSeparator2 = new javax.swing.JSeparator();
+        delMI = new javax.swing.JMenuItem();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        trainsTree = new javax.swing.JTree();
+        jPanel1 = new javax.swing.JPanel();
+        showButton = new javax.swing.JButton();
+        currentRouteTF = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        currentCmdTF = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel3 = new javax.swing.JLabel();
+        weightTF = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        ageTF = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        vMaxTF = new javax.swing.JTextField();
+        updateButton = new javax.swing.JButton();
+        delButton = new javax.swing.JButton();
+        manualButton = new javax.swing.JButton();
+
+        renameMI.setText("umbenennen");
+        renameMI.setActionCommand("rename");
+        renameMI.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                renameMIActionPerformed(evt);
+            }
+        });
+        trainsTreePopup.add(renameMI);
+        trainsTreePopup.add(jSeparator2);
+
+        delMI.setText("löschen");
+        delMI.setActionCommand("delpath");
+        delMI.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonActionPerformed(evt);
+            }
+        });
+        trainsTreePopup.add(delMI);
+
+        setPreferredSize(new java.awt.Dimension(310, 400));
+
+        trainsTree.setCellEditor(new treeCellEditor(trainsTree,new treeCellRenderer()));
+        trainsTree.setCellRenderer(new treeCellRenderer());
+        trainsTree.setEditable(true);
+        trainsTree.setLargeModel(true);
+        trainsTree.addTreeSelectionListener(new javax.swing.event.TreeSelectionListener() {
+            public void valueChanged(javax.swing.event.TreeSelectionEvent evt) {
+                trainsTreeValueChanged(evt);
+            }
+        });
+        jScrollPane1.setViewportView(trainsTree);
+
+        showButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/railsim/gui/resources/show.png"))); // NOI18N
+        showButton.setText("zeigen");
+        showButton.setEnabled(false);
+        showButton.setMargin(new java.awt.Insets(2, 7, 2, 7));
+        showButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                showButtonActionPerformed(evt);
+            }
+        });
+
+        currentRouteTF.setEditable(false);
+
+        jLabel1.setText("aktuelle Route");
+
+        jLabel2.setText("aktueller Befehl");
+
+        currentCmdTF.setEditable(false);
+
+        jLabel3.setText("Gewicht");
+
+        weightTF.setEditable(false);
+
+        jLabel4.setText("eingefahen um");
+
+        ageTF.setEditable(false);
+
+        jLabel5.setText("vMax");
+
+        vMaxTF.setEditable(false);
+
+        updateButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/railsim/gui/resources/update.png"))); // NOI18N
+        updateButton.setText("Ausgabe aktualisieren");
+        updateButton.setEnabled(false);
+        updateButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updateButtonActionPerformed(evt);
+            }
+        });
+
+        delButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/railsim/gui/resources/delete.png"))); // NOI18N
+        delButton.setText("löschen...");
+        delButton.setToolTipText("noch nicht unterstützt");
+        delButton.setEnabled(false);
+        delButton.setMargin(new java.awt.Insets(2, 7, 2, 7));
+        delButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                delButtonActionPerformed(evt);
+            }
+        });
+
+        manualButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/org/railsim/gui/resources/pathway.png"))); // NOI18N
+        manualButton.setText("manuell...");
+        manualButton.setToolTipText("manuelle Steuerung");
+        manualButton.setEnabled(false);
+        manualButton.setMargin(new java.awt.Insets(2, 7, 2, 7));
+        manualButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                manualButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(showButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(manualButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addComponent(delButton)
+                .addContainerGap())
+            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(currentRouteTF, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
+                            .addComponent(weightTF, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
+                            .addComponent(currentCmdTF, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
+                            .addComponent(ageTF, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
+                            .addComponent(vMaxTF, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
+                            .addComponent(updateButton)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGap(0, 262, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel4)
+                        .addGap(0, 229, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(0, 274, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(showButton)
+                    .addComponent(delButton)
+                    .addComponent(manualButton))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 8, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(currentRouteTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(currentCmdTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(weightTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(vMaxTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(ageTF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(updateButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 310, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 183, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void showButtonActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_showButtonActionPerformed
+    {//GEN-HEADEREND:event_showButtonActionPerformed
+		TreePath t = trainsTree.getSelectionPath();
+		if (t != null) {
+			comparableDefaultMutableTreeNode cdmtn = (comparableDefaultMutableTreeNode) t.getLastPathComponent();
+			Object o = cdmtn.getUserObject();
+			if (o instanceof fulltrain) {
+				dataCollector.collector.thegame.runAction(new EditorActionEvent<>("showTrain", (fulltrain) o));
+			}
+		}
+
+    }//GEN-LAST:event_showButtonActionPerformed
+
+    private void manualButtonActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_manualButtonActionPerformed
+    {//GEN-HEADEREND:event_manualButtonActionPerformed
+		TreePath t = trainsTree.getSelectionPath();
+		if (t != null) {
+			comparableDefaultMutableTreeNode cdmtn = (comparableDefaultMutableTreeNode) t.getLastPathComponent();
+			Object o = cdmtn.getUserObject();
+			if (o instanceof fulltrain) {
+				manualControlInterface.openEditor(this, (fulltrain) o);
+			}
+		}
+    }//GEN-LAST:event_manualButtonActionPerformed
+
+    private void updateButtonActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_updateButtonActionPerformed
+    {//GEN-HEADEREND:event_updateButtonActionPerformed
+		TreePath t = trainsTree.getSelectionPath();
+		currentRouteTF.setText("");
+		currentCmdTF.setText("");
+		weightTF.setText("");
+		ageTF.setText("");
+		vMaxTF.setText("");
+		updateButton.setEnabled(false);
+		showButton.setEnabled(false);
+		delButton.setEnabled(false);
+		manualButton.setEnabled(false);
+		if (t != null) {
+			comparableDefaultMutableTreeNode cdmtn = (comparableDefaultMutableTreeNode) t.getLastPathComponent();
+			Object o = cdmtn.getUserObject();
+			if (o instanceof fulltrain) {
+				fulltrain ft = (fulltrain) o;
+				try {
+					currentRouteTF.setText(ft.getMainExecutor().getRoute().getName());
+					currentCmdTF.setText(ft.getMainExecutor().getCurrentCommand().toString());
+				} catch (Exception e) {
+				}
+				weightTF.setText(ft.getWeight() + " kg");
+				ageTF.setText(dataCollector.collector.formatDate(new Date(ft.getCreationGametime())));
+				vMaxTF.setText(ft.getvMax() + " km/h");
+				updateButton.setEnabled(true);
+				showButton.setEnabled(true);
+				delButton.setEnabled(true);
+				manualButton.setEnabled(true);
+			}
+		}
+    }//GEN-LAST:event_updateButtonActionPerformed
+
+    private void ButtonActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_ButtonActionPerformed
+    {//GEN-HEADEREND:event_ButtonActionPerformed
+		dataCollector.collector.thegame.runAction(new EditorActionEvent(evt));
+    }//GEN-LAST:event_ButtonActionPerformed
+
+    private void renameMIActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_renameMIActionPerformed
+    {//GEN-HEADEREND:event_renameMIActionPerformed
+		trainsTree.startEditingAtPath(trainsTree.getSelectionPath());
+    }//GEN-LAST:event_renameMIActionPerformed
+
+    private void trainsTreeValueChanged(javax.swing.event.TreeSelectionEvent evt)//GEN-FIRST:event_trainsTreeValueChanged
+    {//GEN-HEADEREND:event_trainsTreeValueChanged
+		if (buildTree) {
+			return;
+		}
+		updateButtonActionPerformed(null);
+    }//GEN-LAST:event_trainsTreeValueChanged
+
+    private void delButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delButtonActionPerformed
+		TreePath t = trainsTree.getSelectionPath();
+		if (t != null) {
+			comparableDefaultMutableTreeNode cdmtn = (comparableDefaultMutableTreeNode) t.getLastPathComponent();
+			Object o = cdmtn.getUserObject();
+			if (o instanceof fulltrain) {
+				((fulltrain) o).deleteYourself();
+			}
+		}
+    }//GEN-LAST:event_delButtonActionPerformed
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField ageTF;
+    private javax.swing.JTextField currentCmdTF;
+    private javax.swing.JTextField currentRouteTF;
+    private javax.swing.JButton delButton;
+    private javax.swing.JMenuItem delMI;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JButton manualButton;
+    private javax.swing.JMenuItem renameMI;
+    private javax.swing.JButton showButton;
+    private javax.swing.JTree trainsTree;
+    private javax.swing.JPopupMenu trainsTreePopup;
+    private javax.swing.JButton updateButton;
+    private javax.swing.JTextField vMaxTF;
+    private javax.swing.JTextField weightTF;
+    // End of variables declaration//GEN-END:variables
+
+	void visibilityChange(boolean newval) {
+		isvisible = newval;
+		updateTree();
+	}
+
+	void updateTree() {
+		if (isvisible) {
+			buildTree = true;
+
+			dataCollector.collector.thepainter.trains.readLock();
+			for (fulltrain ft : dataCollector.collector.thepainter.trains) {
+				if (root.findObject(ft) == null) {
+					comparableDefaultMutableTreeNode tstart = root.findObject(ft.getStartTrain());
+					if (tstart == null) {
+						tstart = new comparableDefaultMutableTreeNode(ft.getStartTrain());
+						treeModel.insertNodeInto(tstart, root, root.getChildCount());
+					}
+					comparableDefaultMutableTreeNode trn = new comparableDefaultMutableTreeNode(ft);
+					treeModel.insertNodeInto(trn, tstart, tstart.getChildCount());
+				}
+			}
+			boolean cleanLoop = true;
+			while (cleanLoop) {
+				cleanLoop = false;
+				Enumeration<comparableDefaultMutableTreeNode> e = root.preorderEnumeration();
+				while (e.hasMoreElements()) {
+					comparableDefaultMutableTreeNode cdmt = e.nextElement();
+					if (cdmt.getUserObject() instanceof fulltrain) {
+						fulltrain ft = (fulltrain) cdmt.getUserObject();
+						if (!dataCollector.collector.thepainter.trains.contains(ft)) {
+							treeModel.removeNodeFromParent(cdmt);
+							cleanLoop = true;
+							break;
+						}
+					} else if (cdmt.getUserObject() instanceof starttrain) {
+						if (cdmt.isLeaf()) {
+							treeModel.removeNodeFromParent(cdmt);
+							cleanLoop = true;
+							break;
+						}
+					} else if (cdmt.isLeaf() && cdmt != root) {
+						treeModel.removeNodeFromParent(cdmt);
+						cleanLoop = true;
+						break;
+					}
+				}
+			}
+			dataCollector.collector.thepainter.trains.readUnlock();
+			trainsTree.expandRow(0);
+			buildTree = false;
+		}
+	}
+
+	void trackEvent(EditorEvent e) {
+		comparableDefaultMutableTreeNode c, c2;
+		myEvent = true;
+
+		comparableDefaultMutableTreeNode selected = null;
+		Enumeration en;
+		switch (e.getType()) {
+			case EditorEvent.PATHEDIT_PATHABLE_SELECTED:
+
+				break;
+		}
+
+		myEvent = false;
+	}
+}

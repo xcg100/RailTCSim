@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : stocks.xml
+    Created on : 6. September 2007, 12:53
+    Author     : js
+    Info       : stock height is 12 pixel
+        
+-->
+<multi>
+	<rollingstock name="Lok 1" id="testLok1">
+		<type name="lok" />
+		<measure axisdistance="30" frontoverlap="4" backoverlap="4" />
+		<weight empty="10000" full="40000" />
+		<speed empty="200" full="200" />
+		<coupling font="y" back="y" />
+		<engine id="1" />
+		<!--    <appearance filename="classpath:nix.png" angle="0" /> -->
+		<drawappearance3 angle="0">
+			color 90 90 90 255
+			fillrect 2 0 -3 -1
+			color 190 190 190 255
+			fillrect 3 1 -4 -2
+			color 230 230 230 255
+			fillrect 9 4 -10 -5
+			color 20 20 20 255
+			line 12 2 12 -3
+			line -12 2 -12 -3
+		</drawappearance3>
+		<drawappearance angle="0">
+			color 90 90 90 255
+			fillrect 2 0 -3 -1
+			color 190 190 190 255
+			fillrect 3 1 -4 -2
+			color 230 230 230 255
+			fillrect 9 4 -10 -5
+			color 20 20 20 255
+			line 12 2 12 -4
+			line -12 2 -12 -4
+			color 255 255 255 255
+			line 2 2 2 3
+			line 2 -2 2 -3
+		</drawappearance>
+	</rollingstock>
+
+	<rollingstock name="Wagen 1" id="testWagen1">
+		<type name="passagier" />
+		<measure axisdistance="40" frontoverlap="10" backoverlap="5" />
+		<weight empty="10000" full="40000" />
+		<speed empty="200" full="200" />
+		<coupling font="y" back="y" />
+		<drawappearance3 angle="0">
+			color 90 90 90 255
+			fillrect 2 0 -3 -1
+			color 190 190 190 255
+			fillrect 3 1 -4 -2
+			color 230 230 230 255
+			fillrect 9 4 -10 -5
+			color 20 20 20 255
+			fillrect 5 5 7 6
+			fillrect 12 5 14 6
+			fillrect 19 5 21 6
+			fillrect 26 5 28 6
+			fillrect 33 5 35 6
+			fillrect 39 5 41 6
+			fillrect 46 5 48 6
+		</drawappearance3>
+		<drawappearance angle="0">
+			color 90 90 90 255
+			fillrect 2 0 -3 -1
+			color 190 190 190 255
+			fillrect 3 1 -4 -2
+			color 230 230 230 255
+			fillrect 9 4 -10 -5
+			color 20 20 20 255
+			fillrect 5 4 7 -5
+			fillrect 12 4 14 -5
+			fillrect 19 4 21 -5
+			fillrect 26 4 28 -5
+			fillrect 33 4 35 -5
+			fillrect 39 4 41 -5
+			fillrect 46 4 48 -5
+		</drawappearance>
+	</rollingstock>
+</multi>

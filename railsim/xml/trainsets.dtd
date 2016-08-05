@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : trainsets.dtd
+    Created on : 12. August 2007, 21:54
+    Author     : js
+    Description:
+        Purpose of the document follows.
+    DocumentID : $Revision: 12 $
+    
+-->
+
+<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+<!ELEMENT trainsets (set*)>
+<!ATTLIST set
+ version CDATA  #REQUIRED
+>
+
+<!ELEMENT set (stock*)>
+<!ATTLIST set
+ name	CDATA	#REQUIRED
+>
+
+<!ELEMENT stock EMPTY>
+<!ATTLIST stock
+ id	CDATA	#REQUIRED
+ forward (y|n)	#REQUIRED
+>

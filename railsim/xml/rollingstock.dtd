@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : rollingstock.dtd
+    Created on : 15. Mai 2007, 07:48
+    Author     : js
+    Description:
+        Rolling stocks
+    DocumentID : $Revision: 12 $
+
+-->
+
+<!ELEMENT rollingstock (type*,measure,weight,speed,coupling,engine?,appearance*,drawappearance*)>
+<!ATTLIST rollingstock
+    name    CDATA   #REQUIRED
+    id      CDATA   #REQUIRED
+>
+
+<!ELEMENT type EMPTY>
+<!ATTLIST type
+   name	    CDATA   #REQUIRED
+>
+
+<!ELEMENT measure EMPTY>
+<!ATTLIST measure
+    axisdistance    CDATA   #REQUIRED
+    frontoverlap    CDATA   #REQUIRED
+    backoverlap     CDATA   #REQUIRED
+>
+
+<!ELEMENT weight EMPTY>
+<!ATTLIST weight
+    empty          CDATA   #REQUIRED
+    full           CDATA   #REQUIRED
+>
+
+<!ELEMENT speed EMPTY>
+<!ATTLIST speed
+    empty          CDATA   #REQUIRED
+    full           CDATA   #REQUIRED
+>
+
+<!ELEMENT coupling EMPTY>
+<!ATTLIST coupling
+    font           (y|n)   #REQUIRED
+    back           (y|n)   #REQUIRED
+>
+
+<!ELEMENT engine EMPTY>
+<!ATTLIST engine
+    id            CDATA   #REQUIRED
+>
+
+<!ELEMENT appearance EMPTY>
+<!ATTLIST appearance
+    filename	   CDATA	#REQUIRED
+    angle   	   (0|90|180|270)	#REQUIRED
+    type           (svg|png)	#IMPLIED
+>
+
+<!ELEMENT drawappearance (#PCDATA)>
+<!ATTLIST drawappearance
+    angle   	   (0|90|180|270)	#REQUIRED
+>

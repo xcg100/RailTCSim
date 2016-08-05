@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : engine.dtd
+    Created on : 15. Mai 2007, 07:49
+    Author     : js
+    Description:
+        Engine of rolling stocks
+    DocumentID : $Revision: 12 $
+-->
+
+<!ELEMENT engine (power)>
+<!ATTLIST engine
+    name    CDATA   #REQUIRED
+    id      CDATA   #REQUIRED
+>
+
+<!ELEMENT power EMPTY>
+<!ATTLIST power
+    power           CDATA   #REQUIRED
+    maxspeed        CDATA   #REQUIRED
+    acceleration    CDATA   #REQUIRED
+    deceleration    CDATA   #REQUIRED
+>
